@@ -4,4 +4,5 @@ from .models import Todo
 class TodoSerializer(serializers.ModelSerializer):
     class Meta :
      model =   Todo
-     exclude = [] #kullanmadigimi gormek istoyorsma
+     exclude = ['created_date',
+            'updated_date',] #kullanmadigimi gormek istoyorsma
